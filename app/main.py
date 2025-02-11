@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 Base.metadata.create_all(bind=engine)
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(aplication: FastAPI):
     db = Session(bind=engine)
     try:
         default_riddles(db)

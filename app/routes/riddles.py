@@ -60,3 +60,4 @@ def delete_riddle(riddle_id: int, db: Session = Depends(database.get_db)):
     db.delete(riddle)
     db.commit()
     return
+

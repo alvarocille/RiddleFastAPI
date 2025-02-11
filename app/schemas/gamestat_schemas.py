@@ -1,5 +1,6 @@
 from datetime import datetime
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
+
 
 class GameStatCreate(BaseModel):
     riddles_solved: int
@@ -8,6 +9,7 @@ class GameStatCreate(BaseModel):
     elapsed_time: float
 
 class GameStatRead(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     id: int
     user_id: int
     riddles_solved: int
@@ -16,5 +18,3 @@ class GameStatRead(BaseModel):
     elapsed_time: float
     created_at: datetime
 
-    class Config:
-        from_attributes = True

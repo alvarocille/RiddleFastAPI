@@ -1,4 +1,3 @@
-
 from sqlalchemy import Column, Integer, ForeignKey, DateTime, Float
 from sqlalchemy.orm import relationship
 from datetime import datetime, timezone
@@ -17,3 +16,4 @@ class GameStat(Base):
     created_at = Column(DateTime, default=datetime.now(timezone.utc))
 
     user = relationship("User", back_populates="game_stats")
+

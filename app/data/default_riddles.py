@@ -7,7 +7,7 @@ def default_riddles(db: Session):
     if db.query(Riddle).first() is not None:
         return
 
-    default_riddles = [
+    init_riddles = [
         {"question": "¿Qué es algo que no se puede ver, pero siempre está contigo?", "solution": "Sombra",
          "category": "General"},
         {"question": "Cuanto más grande, menos se ve. ¿Qué es?", "solution": "Oscuridad", "category": "General"},
@@ -58,7 +58,7 @@ def default_riddles(db: Session):
             "solution": "Cinco", "category": "Matemáticas"}
     ]
 
-    for item in default_riddles:
+    for item in init_riddles:
         riddle = Riddle(
             question=item["question"],
             solution=item["solution"],
@@ -66,3 +66,4 @@ def default_riddles(db: Session):
         )
         db.add(riddle)
     db.commit()
+
