@@ -8,3 +8,5 @@ Es un proyecto que integra una API RESTful, desarrollada con FastAPI, con una ap
 Para obtener una descripción completa del análisis, diseño, implementación, pruebas y despliegue del proyecto, puedes consultar la memoria del proyecto en formato PDF, la cual se encuentra en este repositorio:
 
 [Memoria del Proyecto (PDF)](https://github.com/alvarocille/RiddleFastAPI/blob/master/Cilleruelo_Sinovas_Alvaro_Memoria_ProyectoFinal_DAM24.pdf)
+
+https://www.canva.com/design/DAGct0fDqZw/l2LTu9dIpnJ4TPG5gogiww/edit?utm_content=DAGct0fDqZw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
